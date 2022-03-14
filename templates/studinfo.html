@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+
+	<link rel="stylesheet" href="{{ url_for('static',filename='css/bootstrap.min.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static',filename='css/font-awesome.min.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static',filename='css/nivo-lightbox.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static',filename='css/nivo_themes/default/default.css') }}">
+	<link rel='icon' href='./static/download.ico'>
+
+	<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+
+
+  <link rel="stylesheet" href="{{ url_for('static',filename='css/style.css') }}">
+
+	<link rel="stylesheet" href="{{ url_for('static',filename='css/nivo-lightbox.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static',filename='css/nivo_themes/default/default.css') }}">
+
+
+  <title>SIS</title>
+</head>
+<body style="background-color:powderblue;">
+<div class="container">
+		<div class="navbar navbar-default navbar-static-top" role="navigation">
+		<div class="navbar-header">
+			<button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+				<span class="icon icon-bar"></span>
+				<span class="icon icon-bar"></span>
+				<span class="icon icon-bar"></span>
+			</button>
+			<a>MCA<class="img-responsive" alt="logo"></a>
+		</div>
+		<div class="collapse navbar-collapse">
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="/">HOME</a></li>
+				<li><a href="/about">ABOUT US</a></li>
+				<li><a href="/contact" class="active">CONTACT</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+<section>
+  <h1>Student Information Table</h1>
+  <div class="container-table100">
+			<div class="wrap-table100">
+				<div class="table100">
+					<table>
+						<thead>
+							<tr class="table100-head">
+								<th class="column1">Student Name</th>
+								<th class="column2">Father Name</th>
+								<th class="column3">Surname</th>
+								<th class="column4">Mother Name</th>
+								<th class="column5">Gender</th>
+								<th class="column6">DOB</th>
+								<th class="column6">DOJ</th>
+								<th class="column6">Class</th>
+								<th class="column6">Course Name</th>
+								<th class="column6">Mobile Number</th>
+								<th class="column6">City</th>
+								<th class="column6">Address</th>
+								<th class="column6">Email</th>
+							</tr>
+						</thead>
+						<tbody>
+								<tr>
+									<td class="column1">{{sname}}</td>
+									<td class="column2">{{fname}}</td>
+									<td class="column3">{{surname}}</td>
+									<td class="column4">{{mname}}</td>
+									<td class="column5">{{gender}}</td>
+									<td class="column6">{{dob}}</td>
+									<td class="column6">{{doj}}</td>
+									<td class="column6">{{classs}}</td>
+									<td class="column6">{{course}}</td>
+									<td class="column6">{{mobile}}</td>
+									<td class="column6">{{city}}</td>
+									<td class="column6">{{address}}</td>
+									<td class="column6">{{email}}</td>
+								</tr>
+
+								
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+</section>
+<div id="contact-header">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 col-sm-12"></div>
+		</div>
+	</div>
+</div>
+
+
+<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+<script src="{{ url_for('static',filename='js/index.js') }}"></script>
+
+
+</body>
+</html>

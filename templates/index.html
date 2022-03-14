@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>SIS</title>
+    <meta name="keywords" content="">
+	<meta name="description" content="">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="{{ url_for('static',filename='css/bootstrap.min.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static',filename='css/font-awesome.min.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static',filename='css/nivo-lightbox.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static',filename='css/nivo_themes/default/default.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static',filename='css/templatemo-style.css') }}">
+	<link rel='icon' href='./static/download.ico'>
+	<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+
+</head>
+<body>
+	
+
+	<div class="container">
+		<div class="navbar navbar-default navbar-static-top" role="navigation">
+		<div class="navbar-header">
+			<button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+				<span class="icon icon-bar"></span>
+				<span class="icon icon-bar"></span>
+				<span class="icon icon-bar"></span>
+			</button>
+			<a class='navbar-brand'>MCA</a>
+		</div>
+		<div class="collapse navbar-collapse">
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="/" class="active">HOME</a></li>
+				<li><a href="/about">ABOUT US</a></li>
+				<li><a href="/contact">CONTACT</a></li>
+			</ul>
+		</div>
+	</div>
+</div>		
+
+<div id="home">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-5 col-sm-3"></div>
+			<div class="col-md-7 col-sm-9">
+				<h3>welcome to</h3>
+				<h1>Student Information</h1>
+				<h1>System</h1>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="divider">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4 col-sm-6">
+				<div class="divider-wrapper divider-one">
+					<a href="\Registration" title='Click To Register a Student'><h2>Student Registration</h2></a>
+					<p>Click on Student Registration for go to resgistration page , it will be only if you are administrator.</p>
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-6">
+				<div class="divider-wrapper divider-two">
+					<a href="\studinfo" title='Click to check student records'><h2>Student Records</h2></a>
+					<p>Click on Student Records for see all student records , it will be only if you are administrator.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<footer>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-5 col-sm-4">
+			<a href="#" class="navbar-brand">MCA</a>
+				<p>MCA Department, VidyaBharti College, Amravati </p>
+			</div>
+		</div>
+	</div>
+</footer>
+
+<script src="{{ url_for('static',filename='js/jquery.js') }}"></script>
+<script src="{{ url_for('static',filename='js/bootstrap.min.js') }}"></script>
+<script src="{{ url_for('static',filename='js/nivo-lightbox.min.js') }}"></script>
+<script src="{{ url_for('static',filename='js/custom.js') }}"></script>
+
+</body>
+</html>
